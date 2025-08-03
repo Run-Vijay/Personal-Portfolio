@@ -8,18 +8,10 @@
 body {
     background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
     font-family: "Poppins", sans-serif;
+
 }
 
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 0.5s ease-in forwards;
-}
 
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
 
 /* Nav section */
 #navbar {
@@ -39,6 +31,11 @@ body {
     font-size: 1.6rem;
     color: #1bfcf4;
     cursor: pointer;
+}
+#navbar h1:hover {
+    color: #1bfcf4;
+    text-shadow: #1bfcf4 4px 4px 20px;
+    transition: all 0.1s ease-in-out;
 }
 
 #navbar>ul {
@@ -268,6 +265,158 @@ body {
     width: 20px;
 }
 
+
+
+/* skill section */
+#skills-section {
+    height: calc(100vh - 100px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 50px;
+    color: white;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.heading h1 {
+    font-size: 1.85rem;
+    font-weight: 600;
+    color: #1bfcf4;
+}
+.heading h1:hover{
+    color: #1bfcf4;
+    text-shadow: #1bfcf4 4px 4px 20px;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.heading p {
+    font-size: 1.2rem;
+    color: #9b9b9c;
+}
+
+
+/* skill container */
+
+.container {
+    min-height: 200px;
+    width: 100%;
+    gap: 20px;
+    /* background-color: #1bfcf4; */
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+    /* gap: 80px; */
+
+}
+
+.skills {
+    width: 250px;
+    height: 300px;
+    background-color: #232832;
+    padding: 10px;
+    box-sizing: border-box;
+    /* Avoid overflow issues */
+    overflow: hidden;
+    border-radius: 10px;
+    /* transition: all 0.3s ease-in-out; */
+}
+.skills:hover {
+    transform: scale(1.008);
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(9, 206, 250, 0.507) 0px 7px 29px 0px;
+
+    
+
+}
+
+.skills-heading {
+    height: 20%;
+    width: 100%;
+    background-color: #111c2c; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5pxs;
+}
+
+.skills-heading h3 {
+    font-size: 1.1rem;
+    color: #1bfcf4;
+    font-weight: 600;
+}
+.skills-heading h3:hover{
+    /* color: #d3d3d8; */
+    text-shadow: #1bfcf4 4px 4px 20px;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.skill-topic {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    /* background-color: #232832; */
+}
+
+.skill-topic img {
+    width: 20px;
+    height: 20px;
+}
+.skill-topic svg{
+    width: 22px;
+    height: 22px;
+}
+
+.skill-topic span {
+    font-size: 1.2rem;
+    color: #d3d3d8;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+
+.skills span {
+    font-size: 1rem;
+    color: #d3d3d8;
+}
+
+
+
+/* Projects section */
+
+#Project-section {
+    height: calc(100vh - 100px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Responsive Design */
+
 @media only screen and (max-width: 1050px) {
     body {
         display: flex;
@@ -283,6 +432,35 @@ body {
     #navbar h1 {
         margin-left: 18px;
         font-size: 1.4rem;
+    }
+
+    .burgur {
+        display: flex;
+    }
+
+    .burgur svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    #navbar ul.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        right: 20px;
+        width: 50%;
+        background-color: #232832;
+        padding: 20px 0px 20px 20px;
+        border-radius: 0px;
+        gap: 20px;
+        /* height: auto; */
+        transition: all 0.3s ease-out;
+
+    }
+
+    #navbar ul.active a {
+        display: block;
     }
 
 
@@ -336,36 +514,24 @@ body {
         font-size: 1.5rem;
     }
 
-    .burgur {
+
+
+
+    /* skill section */
+
+    body{
         display: flex;
-    }
-
-    .burgur svg {
-        width: 30px;
-        height: 30px;
-    }
-
-    .ul-list {
-        display: none;
         flex-direction: column;
-        background-color: white;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 100%;
+        gap : 10px;
+    }
+
+    .heading p{
         text-align: center;
-        padding: 1rem 0;
-        z-index: 100;
+        padding: 20px;
     }
 
-    .ul-list.active {
-        display: flex;
+    #skills-section{
+        height: auto;
+        /* padding: 20px; */
     }
-
-    .burger {
-        display: block;
-        cursor: pointer;
-    }
-
-
 }
