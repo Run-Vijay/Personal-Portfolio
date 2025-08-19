@@ -14,11 +14,7 @@
     <!-- Header Section -->
     <header>
         <nav id="navbar">
-            <h1><svg xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                    <path fill="#74C0FC"
-                        d="M392.8 65.2C375.8 60.3 358.1 70.2 353.2 87.2L225.2 535.2C220.3 552.2 230.2 569.9 247.2 574.8C264.2 579.7 281.9 569.8 286.8 552.8L414.8 104.8C419.7 87.8 409.8 70.1 392.8 65.2zM457.4 201.3C444.9 213.8 444.9 234.1 457.4 246.6L530.8 320L457.4 393.4C444.9 405.9 444.9 426.2 457.4 438.7C469.9 451.2 490.2 451.2 502.7 438.7L598.7 342.7C611.2 330.2 611.2 309.9 598.7 297.4L502.7 201.4C490.2 188.9 469.9 188.9 457.4 201.4zM182.7 201.3C170.2 188.8 149.9 188.8 137.4 201.3L41.4 297.3C28.9 309.8 28.9 330.1 41.4 342.6L137.4 438.6C149.9 451.1 170.2 451.1 182.7 438.6C195.2 426.1 195.2 405.8 182.7 393.3L109.3 320L182.6 246.6C195.1 234.1 195.1 213.8 182.6 201.3z" />
-                </svg> Vijay's Portfolio</h1>
+            <h1 id="nav-hadding"> <a href="index.html"> <i class="fa-solid fa-code" style="color: #74C0FC;"></i> Vijay's Portfolio </a></h1>
             <ul class="ul-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="">About</a></li>
@@ -27,12 +23,13 @@
                 <li><a href="Contact.html">Contact</a></li>
             </ul>
             <div class="right">
-                <button>Download CV <svg xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                        <path
-                            d="M352 96C352 78.3 337.7 64 320 64C302.3 64 288 78.3 288 96L288 306.7L246.6 265.3C234.1 252.8 213.8 252.8 201.3 265.3C188.8 277.8 188.8 298.1 201.3 310.6L297.3 406.6C309.8 419.1 330.1 419.1 342.6 406.6L438.6 310.6C451.1 298.1 451.1 277.8 438.6 265.3C426.1 252.8 405.8 252.8 393.3 265.3L352 306.7L352 96zM160 384C124.7 384 96 412.7 96 448L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 448C544 412.7 515.3 384 480 384L433.1 384L376.5 440.6C345.3 471.8 294.6 471.8 263.4 440.6L206.9 384L160 384zM464 440C477.3 440 488 450.7 488 464C488 477.3 477.3 488 464 488C450.7 488 440 477.3 440 464C440 450.7 450.7 440 464 440z" />
-                    </svg></button>
-
+                <div class="dark">
+                    <i class="fa-solid fa-moon" style="color: #ffffff;"></i>
+                </div>
+                <div class="light">
+                    <img src="brightness.png" alt="">
+                </div>
+                
             </div>
             <div class="burgur">
                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -366,22 +363,7 @@
         </div>
     </div>
 
-    <script>
-        // JavaScript for responsive navbar
-        const burgur = document.querySelector('.burgur');
-        const ulList = document.querySelector('.ul-list');
-        burgur.addEventListener('click', () => {
-            ulList.classList.toggle('active');
-            burgur.classList.toggle('active');
-        });
-
-        document.body.addEventListener('click', (e) => {
-            if (!burgur.contains(e.target) && !ulList.contains(e.target)) {
-                ulList.classList.remove('active');
-                burgur.classList.remove('active');
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
