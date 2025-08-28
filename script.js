@@ -1,19 +1,21 @@
 // dark and light mode
+let modeBtn = document.getElementById("mode")
+let text = document.querySelector(".black")
+modeBtn.addEventListener("click", ()=>{
+    if(modeBtn.textContent == "Light"){
+        modeBtn.textContent = "Dark"
+        document.body.style.backgroundColor= "white"
+        
+    } else{
+        modeBtn.textContent = "Light"
+        document.body.style.backgroundColor = "rgb(17 24 39 / var(--tw-bg-opacity, 1))"
+    }
 
-
-
-
-
-
-var typed = new Typed('#element', {
-    strings: ['Web Developer ', 'Designer ', 'Content Creator '],
-    typeSpeed: 50, repeat: true, backSpeed: 30, backDelay: 800, loop: true
-});
-
+})
 
 // JavaScript for responsive navbar
-const burgur = document.querySelector('.burgur');
-const ulList = document.querySelector('.ul-list');
+let burgur = document.querySelector('.burgur');
+let ulList = document.querySelector('.ul-list');
 burgur.addEventListener('click', () => {
     ulList.classList.toggle('active');
     burgur.classList.toggle('active');
@@ -25,7 +27,6 @@ document.body.addEventListener('click', (e) => {
         burgur.classList.remove('active');
     }
 });
-
 
 // button click
 
@@ -69,6 +70,3 @@ function facebook() {
         window.open("https://www.facebook.com/share/1C3Cbo2z6S/", "_blank");
     })
 }
-
-
-

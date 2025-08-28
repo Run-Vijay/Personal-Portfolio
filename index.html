@@ -14,7 +14,8 @@
     <!-- Navbar & Header -->
     <header>
         <nav id="navbar">
-            <h1 id="nav-hadding"> <a href="index.html"> <i class="fa-solid fa-code" style="color: #74C0FC;"></i> Vijay's Portfolio </a></h1>
+            <h1 id="nav-hadding"> <a href="index.html"> <i class="fa-solid fa-code" style="color: #74C0FC;"></i> Vijay's
+                    Portfolio </a></h1>
             <ul class="ul-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="">About</a></li>
@@ -22,14 +23,9 @@
                 <li><a href="project.html">Project</a></li>
                 <li><a href="Contact.html">Contact</a></li>
             </ul>
-            <div class="right">
-                <div class="dark">
-                    <i class="fa-solid fa-moon" style="color: #ffffff;"></i>
-                </div>
-                <div class="light">
-                    <img src="brightness.png" alt="">
-                </div>
-                
+            <div class="mode">
+                <button id="mode">Light</button>
+
             </div>
             <div class="burgur">
                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -54,9 +50,9 @@
                 <p class="para">"I build websites and web applications that are not only visually appealing but also
                     highly functional and user-friendly. My goal is to turn ideas into seamless digital solutions using
                     modern technologies and clean code."?</p>
-                
+
                 <div class="resume">
-                    <button>Download Resume</button>
+                    <button id="resume">Download Resume</button>
                 </div>
 
                 <div class="logos">
@@ -115,7 +111,22 @@
 
     <!-- Java script for typing effect -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        // home typing effect
+        var typed = new Typed('#element', {
+            strings: ['Web Developer ', 'Designer ', 'Content Creator '],
+            typeSpeed: 50, repeat: true, backSpeed: 30, backDelay: 800, loop: true
+        });
 
+        // Resume Button 
+        let resume = document.getElementById("resume")
+        resume.addEventListener("click", () => {
+            const link = document.createElement("a");
+            link.href = "resume.pdf";  // yaha pe apni resume file ka path do
+            link.download = "Vijay_Resume.pdf";
+            link.click();
+        })
+    </script>
     <script src="script.js"></script>
 
 

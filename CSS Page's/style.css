@@ -64,6 +64,7 @@ body {
     background-color: #232832;
     border-radius: 50px;
     padding: 15px 50px;
+    transition: all 0.5s;
 }
 
 #navbar>ul>li {
@@ -105,18 +106,18 @@ body {
     margin-top: 7px;
 
 }
-/* .right button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2px;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-} */
+.mode{
+    margin-right: 20px;
+}
+
+#mode{
+    height: 30px;
+    width: 80px;
+    border-radius: 20px;
+    background-color: #00bfff;
+    color: black;
+
+}
 
 
 .burgur {
@@ -696,13 +697,17 @@ body {
         padding: 20px 0px 20px 20px;
         border-radius: 0px;
         gap: 20px;
-        /* height: auto; */
-        transition: all 0.3s ease-out;
-
+        height: auto;
     }
 
     #navbar ul.active a {
         display: block;
+    }
+
+    #mode{
+        position: absolute;
+        right: 80px;
+        top: 38px;
     }
 
 
