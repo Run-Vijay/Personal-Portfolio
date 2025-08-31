@@ -1,12 +1,12 @@
 // dark and light mode
 let modeBtn = document.getElementById("mode")
 let text = document.querySelector(".black")
-modeBtn.addEventListener("click", ()=>{
-    if(modeBtn.textContent == "Light"){
+modeBtn.addEventListener("click", () => {
+    if (modeBtn.textContent == "Light") {
         modeBtn.textContent = "Dark"
-        document.body.style.backgroundColor= "white"
-        
-    } else{
+        document.body.style.backgroundColor = "white"
+
+    } else {
         modeBtn.textContent = "Light"
         document.body.style.backgroundColor = "rgb(17 24 39 / var(--tw-bg-opacity, 1))"
     }
