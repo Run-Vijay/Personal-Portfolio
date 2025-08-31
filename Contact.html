@@ -8,24 +8,24 @@
     <link rel="icon" href="Web-Logo.png">
     <link rel="stylesheet" href="./CSS Page's/responsive.css">
     <link rel="stylesheet" href="./CSS Page's/style.css">
-    
+
 </head>
 
 <body>
     <!-- Navbar & Header -->
     <header>
         <nav id="navbar">
-            <h1 id="nav-hadding"> <a href="index.html"> <i class="fa-solid fa-code" style="color: #74C0FC;"></i> Vijay's Portfolio </a></h1>
+            <h1 id="nav-hadding"> <a href="index.html"> <i class="fa-solid fa-code" style="color: #74C0FC;"></i> Vijay's
+                    Portfolio </a></h1>
             <ul class="ul-list">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="">About</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="project.html">Project</a></li>
                 <li><a href="Contact.html">Contact</a></li>
             </ul>
             <div class="mode">
                 <button id="mode">Light</button>
-                
+
             </div>
             <div class="burgur">
                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -49,10 +49,11 @@
                 <div class="form-section">
                     <form action="https://formspree.io/f/movlkrbz" target="_blank" method="POST" id="form">
                         <div id="form-sec">
-                            <input type="text" name="name" placeholder="Name" autocomplete="off"  required>
-                            <input type="email" name="email" placeholder="Email" autocomplete="off"  required>
-                            <input type="text" name="subject" placeholder="Subject" autocomplete="off" >
-                            <input type="text" name="message" placeholder="Message" autocomplete="off"  class="message">
+                            <input class="input" type="text" name="name" placeholder="Name" autocomplete="off" required>
+                            <input class="input" type="email" name="email" placeholder="Email" autocomplete="off" required>
+                            <input class="input" type="text" name="subject" placeholder="Subject" autocomplete="off" required>
+                            <input class="input" type="text" name="message" placeholder="Message" autocomplete="off" class="message"
+                                required>
                             <button type="submit" id="btn">Send Message</button>
                         </div>
 
@@ -82,10 +83,28 @@
             <span>Designed with ❤️ using HTML, CSS (Tailwind CSS)</span>
         </div>
     </div>
+    <script>
+        // let inputs = document.getElementsByid("input");
+        // let btn = document.getElementById("btn");
 
+        // let empty = false;
+        // for (let i = 0; i < inputs.length; i++) {
+        //     if (inputs[i].value.trim() === "") {
+        //         empty = true;
+        //         break;
+        //     }
+        // }
+
+        // if (empty) {
+        //     btn.style.cursor = "not-allowed";
+        // } else {
+        //     btn.style.cursor = "pointer";
+        // }
+
+    </script>
     <script src="script.js"></script>
 
-    
+
 </body>
 
 </html>

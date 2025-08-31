@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience Timeline</title>
+  <style>
+    body {
+      background: #111;
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .experience {
+      width: 70%;
+      margin: 60px auto;
+    }
+
+    .experience h2 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+
+    .timeline {
+      position: relative;
+      padding-left: 40px;
+      border-left: 2px solid #333;
+    }
+
+    .timeline-item {
+      margin-bottom: 50px;
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -53px;
+      top: 5px;
+      width: 18px;
+      height: 18px;
+      background: #fbbf24;
+      border-radius: 50%;
+      border: 3px solid #111;
+    }
+
+    .timeline-item h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .timeline-item span {
+      display: block;
+      color: #fbbf24;
+      font-size: 16px;
+      font-weight: 500;
+      margin: 5px 0 12px 0;
+    }
+
+    .timeline-item p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #ccc;
+      margin: 0;
+      max-width: 600px;
+    }
+
+    /* Hover effect */
+    .timeline-item:hover::before {
+      background: #fff;
+      border: 3px solid #fbbf24;
+      transition: 0.3s;
+    }
+  </style>
+</head>
+<body>
+  <section class="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <h3>Web Development Intern</h3>
+        <span>2024 — 2025</span>
+        <p>Worked on creating responsive websites using HTML, CSS, JavaScript and optimized frontend performance.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>App Development Intern</h3>
+        <span>2023 — 2024</span>
+        <p>Assisted in developing mobile apps using Java & Flutter, integrated APIs and improved UI/UX designs.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Cybersecurity Intern</h3>
+        <span>2022 — 2023</span>
+        <p>Learned about penetration testing, network security and participated in vulnerability assessments.</p>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>
