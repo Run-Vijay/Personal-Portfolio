@@ -606,6 +606,7 @@ p {
 .heading p {
     font-size: 1.2rem;
     color: #9b9b9c;
+    text-align: center;
 }
 
 
@@ -745,6 +746,7 @@ p {
 .hadding p {
     font-size: 1.2rem;
     color: #9b9b9c;
+    text-align: center;
 }
 
 .hadding h1:hover {
@@ -844,7 +846,7 @@ p {
 }
 
 .form-conteainer {
-    height: 80%;
+    height: 85%;
     width: 30%;
     background-color: #232832;
     margin-top: 50px;
